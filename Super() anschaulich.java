@@ -23,18 +23,21 @@ class Salat {
 }
 
 class Mittagessen extends Mahlzeit {
+    //super() -> steht hier standard IMMER -> Verweist auf Mahlzeit
     Mittagessen() {
         System.out.println("Mittagessen()");
     }
 }
 
 class Vesper extends Mittagessen {
+    //super() -> steht hier standard IMMER -> Verweist auf Mittagessen
     Vesper() {
         System.out.println("Vesper()");
     }
 }
 
 class Sandwich extends Vesper {
+    //super() -> steht hier standard IMMER -> verweist auf Vesper
     Brot b = new Brot();
     Wurst w = new Wurst();
     Salat s = new Salat();
